@@ -20,3 +20,27 @@ idol = {
     }
 }
 idol['bts']['RM']
+
+for key in lunch.keys():
+    print(key)
+
+for value in lunch.values():
+    print(value)
+
+for key, value in lunch.items():
+    print(key, value)
+
+#문제
+score = {
+    '수학':80,
+    '국어':90,
+    '음악':100
+}
+
+total = 0
+for value in score.values():
+    total += value
+print(total/len(score))
+
+print(sum(score.values())/len(score))
+
