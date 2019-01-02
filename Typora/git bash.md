@@ -10,10 +10,13 @@ clear : 명령 기록 지우기
 
 git status : 현재 상태 보기
 
-git add . : 현재 폴더 깃에 추가
+git add . : 현재 폴더 업로드 대상으로 추가
 
-git commit -m '내용' : 메모와 함께 깃에 업로드
+git commit -m '내용' : 메모  내용 입력
 
-git push : 
+git push : 업로드
 
 mk dir : 폴더 생성
+
+git clone 주소 : 주소를 통해 내려받기
+
