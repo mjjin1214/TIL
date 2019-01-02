@@ -15,3 +15,5 @@ git add . : 현재 폴더 깃에 추가
 git commit -m '내용' : 메모와 함께 깃에 업로드
 
 git push : 
+
+mk dir : 폴더 생성
