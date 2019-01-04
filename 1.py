@@ -1,41 +1,24 @@
-import sys
-n = int(sys.stdin.readline())
-a = n/3
+a = int(input())
+b = []
+for i in range(a):
+    b.append(input())
+    if not (1 <= int(b[i][4:6]) <= 12):
+        print(f'#{i+1} -1')
+    elif int(b[i][4:6]) in [1, 3, 5, 7, 8, 10, 12]:
+        if not (1 <= int(b[i][6:8]) <= 31):
+            print(f'#{i+1} -1')
 
-k = 0
-while a > 1:
-    a //= 2
-    k += 1
-print(f'k={k}')
-
-len_b = 5
-for i in range(k):
-    len_b = (len_b)*2+1
-print(f'len_b={len_b}')
-# for i in range(k):
-#     len_b = (2*(len_b[i])+1)
-# print(f'len_b={len_b}')
-
-def star(n):
-    if n == 1:
-        print(' '*int(((len_b-5)/2)), end='')
-        print('  *  ', end='')
-    else:
-        star(n-1)
-        print('\n'+' '*int((len_b-5-(6*((n-1)//3)))/2), end='')
-        if n%3 == 1:
-            print('  *  ', end='')
-        elif n%3 == 2:
-            print(' * * ', end='')
         else:
-            print('*****', end='')
+            print(f'#{i+1} {b[i][0:4]}/{b[i][4:6]}/{b[i][6:8]}')
+    elif int(b[i][4:6]) in [4, 6, 9, 11]:
+        if not (1 <= int(b[i][6:8]) <= 30):
+            print(f'#{i+1} -1')
 
-        if (n-1)//3 >= 1:
-            print(' '*((n-1)//3), end ='')
-            if n%3 == 1:
-                print('  *  ', end='')
-            elif n%3 == 2:
-                print(' * * ', end='')
-            else:
-                print('*****', end='')
-star(n)
+        else:
+            print(f'#{i+1} {b[i][0:4]}/{b[i][4:6]}/{b[i][6:8]}')
+    else:
+        if not (1 <= int(b[i][6:8]) <=28 ):
+            print(f'#{i+1} -1')
+
+        else:
+            print(f'#{i+1} {b[i][0:4]}/{b[i][4:6]}/{b[i][6:8]}')
