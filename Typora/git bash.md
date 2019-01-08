@@ -45,3 +45,5 @@ git config --global user.email '이메일' : 이메일 등록
 git log : commit 기록 보기
 
 code . : 해당폴더에서 vscode 실행
+
+git checkout -- . : 마지막 커밋 상태로 돌아가기

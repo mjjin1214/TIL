@@ -1,8 +1,6 @@
-t = int(input())
-for i in range(t):
-    n, m = map(int, input().split())
-    a = []
-    for j in range(n):
-        a.append(list(map(int, input().split())))
-    for k in range(n-m):
-
+a = int(input())
+for i in range(a):
+    b = 0
+    for j in range(int(input())):
+        b = b + ((-1)**(j))*(j+1)
+    print(f'#{i+1} {b}')
