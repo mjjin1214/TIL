@@ -1,6 +1,8 @@
-a = int(input())
-for i in range(1, a+1):
-    if '3' in str(i) or '6' in str(i) or '9' in str(i):
-        print('-'*(str(i).count('3') + str(i).count('6') + str(i).count('9')), end=' ')
-    else:
-        print(i, end=' ')
+t = int(input())
+for i in range(t):
+    n, m = map(int, input().split())
+    a = []
+    for j in range(n):
+        a.append(list(map(int, input().split())))
+    for k in range(n-m):
+
