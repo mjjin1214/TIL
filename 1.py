@@ -1,12 +1,3 @@
-def z(b, c, d):
-    ct = 0
-    for i in range(b):
-        a = d[i].split('0')
-        for k in a:
-            if len(k) == c:
-                ct += 1
-    return ct
-
 a = int(input())
 for i in range(a):
     b, c = map(int, input().split())
