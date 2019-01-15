@@ -1,0 +1,15 @@
+div {
+    height: 200px;
+}
+
+.background-color {
+    background-color: blue;
+}
+
+.background-image{
+    background-image: url(images/ms.jpg);
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    
+}

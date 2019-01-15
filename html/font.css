@@ -1,0 +1,9 @@
+.font {
+    font-size: 40px;
+    font-style: italic;
+    font-weight: 700; /* bold */
+    /* font-family: 'Times New Roman', Times, serif */
+    font-family: 'Do Hyeon', sans-serif;
+    line-height: 1.5;
+    letter-spacing: 4px;
+}

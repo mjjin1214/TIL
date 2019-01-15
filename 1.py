@@ -1,27 +1,34 @@
 a = int(input())
 for i in range(a):
-    b, c = map(int, input().split())
-    d = []
+    print(f'#{i+1}', end=' ')
+    b = []
     count = 0
-    for j in range(b):
-        d.append(input().replace(' ', ''))
-    count += z(b, c, d)
-    # for j in range(b):
-    #     d.append(input().replace(' ', ''))
-    #     e = d[j].split('0')
-    #     for k in e:
-    #         if len(k) == c:
-    #             count += 1
-    g = []
-    for l in range(b):
-        f = ''
-        for m in range(b):
-            f += d[m][l]
-        g.append(f)
-    count += z(b, c, g)
-    # for n in g:
-    #     h = n.split('0')
-    #     for n in h:
-    #         if len(n) == c:
-    #             count += 1
-    print(f'#{i+1} {count}')
+    for j in range(9):
+        b.append(list(map(int, input().split())))
+        if sum(b[j]) != 45:
+            count += 1
+    if count != 0:
+        print(0)
+    else:
+        for k in range(9):
+            c = 0
+            for l in range(9):
+                c += b[l][k]
+            if c != 45:
+                print(0)
+                count += 1
+                break
+        if count == 0:
+            for m in range(0, 7, 3):
+                for n in range(0, 7, 3):
+                    c = 0
+                    for o in range(3):
+                        for p in range(3):
+                            c += b[m+o][n+p]
+                    if c != 45:
+                        count += 1
+                        break
+            if count == 0:
+                print(1)
+            else:
+                print(0)
