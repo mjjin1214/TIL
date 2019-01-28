@@ -47,3 +47,11 @@ git log : commit 기록 보기
 code . : 해당폴더에서 vscode 실행
 
 git checkout -- . : 마지막 커밋 상태로 돌아가기
+
+git remote set-url origin 주소 : 깃 업로드 주소 변경
+
+git remote -v : 깃 업로드 주소 목록
+
+git remote add github 주소 : github이란 이름으로 업로드 주소 추가
+
+git push github master : github 이름을 가진 주소로 푸쉬
